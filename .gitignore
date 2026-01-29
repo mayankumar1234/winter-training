@@ -1,0 +1,35 @@
+# Build and IDE files
+build/
+Debug/
+*.o
+*.obj
+*.exe
+*.out
+*.log
+*.class
+.vscode/
+*.ilk
+*.pdb
+*.stackdump
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
+
+# MinGW
+*.exe
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeLists.txt.user
+
+# Python artifacts (if any)
+__pycache__/
+*.pyc
+
