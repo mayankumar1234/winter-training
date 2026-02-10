@@ -5,4 +5,11 @@ int main(){
     s.push(1);
     s.push(2);  
     s.push(3);
+    cout<<s.top()<<endl;
+    s.pop();
+    cout<<s.top()<<endl; 
+    cout<<s.size()<<endl;
+    cout<<s.empty()<<endl;
+
+
 }
