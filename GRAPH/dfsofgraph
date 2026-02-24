@@ -1,0 +1,22 @@
+class Solution {
+  public:
+    void helper(int node,vector<vector<int>>& adj,
+    vector<bool>&visited,vector<int>&result){
+        visited[node]=true;
+        result.push_back(node);
+        for(auto neighbour:adj[node]){
+            if(!visited[neighbour]){
+                helper(neighbour,adj ,visited,result);
+            }
+        }
+    }
+    vector<int> dfs(vector<vector<int>>& adj) {
+        // Code here
+        int v=adj.size();
+        vector<int>result;
+        vector<bool>visited(v,false);
+        
+        helper(0,adj,visited,result);
+        return result;
+    } 
+};
